@@ -38,12 +38,12 @@
 
 .section-description{
     font-size: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
 }
 .section-title{
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 /* header style */
 .list{
@@ -59,7 +59,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.banner, .nav-bar{
+.banner, .nav-bar, .footer, .sponsors, .factors{
     max-width: 1440px;
     margin: 0 auto;
     
@@ -122,7 +122,7 @@ main{
     margin-top: 57px;
     align-items: center;
 }
-.factors, .section-margin{
+.factors, .section-margin, .features{
     margin-top: 130px;
 }
 .facts-container{
@@ -154,18 +154,67 @@ main{
     font-size: 1.4rem;
     margin-top: 5px;
 }
+ 
+  .feature-card {
+    
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.feature-card h4{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+/* .feature-heading{
+    margin: 0;
+} */
+.feature-card p{
+    margin: 0;
+}
+.features{
+    gap: 100px;
+}
+.features h3{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin: 0;
+}
+
 .logos{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
     filter: grayscale(100%);
 }
+.footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+.badge{
+  margin-left: -100px;
+  margin-top: -130px;
+}
+.badge-1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.badge-2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 /*  responsive with media query */
 
 @media screen and (max-width: 576px) {
 
-    .nav-bar, .items, .team{
+    .nav-bar, .items, .team, .features{
         flex-direction: column;
     }
     .list{
@@ -185,6 +234,13 @@ main{
     gap: 20px;
     margin-left: 4rem;
     
+   }
+   .features img{
+    width: 100%;
+   }
+   .badge{
+    margin-top: 20px;
+   margin-left: 10px;
    }
    
 
